@@ -4,114 +4,395 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="preparations.css">
+    <link rel="stylesheet" href="emergency.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&family=PT+Serif:ital,wght@1,700&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,700&family=PT+Serif:ital,wght@1,700&family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <section>
-        <div>
-            <a href="#">Vaccination</a>
-            <a href="#">Database</a>
-            <a href="#">Education</a>
-            <a href="#">News</a>
-            <a href="#">Regulation</a>
-            <button><a href="#">Hoax Buster</a></button>
+    <div class="container menu-nav">
+        <ul class="row d-flex mb-0 mr-auto justify-content-end">
+            <li><a href="#"><p style="font-size:large; color:rgb(15, 97, 219)">Vaccination</p></a></li>
+        </ul>
+        <div class="menu responsive">
+            <ul class="row d-flex mb-0 mr-auto justify-content-end">
+                <li><a href="#"><p>Database</p></a></li>
+                <li><a href="#"><p>Education</p></a></li>
+                <li><a href="#"><p>News</p></a></li>
+                <li><a href="#"><p>Regulation</p></a></li>
+            </ul>
         </div>
-    </section>
-    <section>
-        <h1>Fight Virus With Vaccines</h1>
-        <p>Let´s stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
-        <img src="" alt="Security icon"><p>Best protection</p>
-        <img src="" alt="Star icon"><p>Selected Vaccines</p>
-        <img src="" alt="Nurse with syringe image">
-        <div>
-        <img src="" alt="Time icon"><p>Schedule your vaccinations</p>
-            <div>
-                <img src="" alt="Location icon"><p>Location</p><p>Jakarta Utara</p>
-                <img src="" alt="Calendar icon"><p>Date</p><p>08 July 2021</p>
-                <img src="" alt="Pencil icon"><p>Vaccine Type</p><p>Moderna</p>
-                <button><a href="#">Submit</a></button>
+        <div class="col-lg-2 text-center">
+            <a href="#hoaxbuster" class="btn btn-primary btn-lg" role="button">Hoax Buster</a>
+        </div>
+    </div>
+
+    <section class="container info responsive">
+        <div class="col-6">
+            <h1 style="font-weight:bolder">Fight Virus With Vaccines</h1><br>
+            <p style="color: 666699; font-size: 18px;">Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p><br>
+            <div class="container justify-content-center">
+                <img src="images/icon_protection.png" alt="Security icon" width="20px" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;<p>Best protection</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="images/icon_star.png" alt="Star icon" width="20px" height="20px">&nbsp;&nbsp;&nbsp;&nbsp;<p>Selected Vaccines</p>
             </div>
         </div>
+
+        <div class="hero-card align-items-center d-flex position-absolute">
+
+            <img src="images/icon_time.png" alt="Time icon" width="30px"><p>Schedule your vaccinations</p>
+            <div>
+                <img src="images/icon_location.png" alt="Location icon" width="30px"><p>Location</p><p>Jakarta Utara</p>
+                <img src="images/icon_date.png" alt="Calendar icon" width="30px"><p>Date</p><p>08 July 2021</p>
+                <img src="images/icon_vaccine.png" alt="Vaccine icon" width="30px"><p>Vaccine Type</p><p>Moderna</p>
+                <button><a href="#"><p style="color: #ffffff; font-size: 12px;">Submit</p></a></button>
+            </div>
+        </div>
+        
+        <div class="hero-img text-center">
+            <img src="images/Nurse_syringe.png" alt="Nurse with syringe image" width="600px">
+            
+        </div>
     </section>
+
+    <!-- <a href="#" class="info-btn hero-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-clock-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+        </svg>
+        &nbsp; Schedule your vaccinations
+    </a>
+    <div class="hero-card align-items-center d-flex position-absolute">
+        <div class="hero-card-item">
+            <p class="hero-card-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                Location
+            </p>
+            <h2 class="hero-card-title">Jakarta Utara</h2>
+        </div>
+        <div class="hero-card-item">
+            <p class="hero-card-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                Date
+            </p>
+            <h2 class="hero-card-title">08 July 2021</h2>
+        </div>
+        <div class="hero-card-item">
+            <p class="hero-card-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                </svg>
+                Vaccine Type
+            </p>
+            <h2 class="hero-card-title">Moderna</h2>
+        </div>
+        <div class="hero-card-item">
+            <a href="#" class="btn btn-primary btn-lg" role="button">Submit</a>
+        </div>
+    </div>
+</div> -->
+
     <section>
-        <div>
-            <img src="" alt="Astra Zeneca Logo">
-            <img src="" alt="SINOVAC Logo">
-            <img src="" alt="Pfizer Logo">
-            <img src="" alt="Moderna Logo">
+        <div class="container logos">
+            <img src="images/Logos_Astrazeneca.png" alt="Astra Zeneca Logo">
+            <img src="images/Logos_Sinovac.png" alt="SINOVAC Logo">
+            <img src="images/Logos_Pfizer.png" alt="Pfizer Logo">
+            <img src="images/Logos_Moderna.png" alt="Moderna Logo">
         </div>   
         <div>
-            <h2>Why should I vaccine?</h2>
+            <h2 style="font-weight:bolder">Why should I vaccine?</h2>
             <p>In order to avoid any doubts abour getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
             <div>
-                <img src="" alt="Virus icon"><p>Minimize the spread of viruses</p><p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
-                <img src="" alt="Security icon"><p>Forming antibodies</p><p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
-                <img src="" alt="People gathered icon"><p>Protecting people nearby</p><p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
-                <img src="" alt="Increasing grapic icon"><p>Creating group immunity</p><p>COVID-19 vaccination if also beneficial for creating group immunity or heard immunity</p>
+                <img src="images/icon_virus.png" alt="Virus icon" width="30px"><p>Minimize the spread of viruses</p><p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                <img src="images/icon_antibodies.png" alt="Security icon" width="30px"><p>Forming antibodies</p><p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
+                <img src="images/icon_people.png" alt="People gathered icon" width="30px"><p>Protecting people nearby</p><p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+                <img src="images/icon_immunity.png" alt="Increasing grapic icon" width="30px"><p>Creating group immunity</p><p>COVID-19 vaccination if also beneficial for creating group immunity or heard immunity</p>
             </div>
         </div>
     </section>
-    <section>
+    <!-- <section>
         <div>
-            <img src="" alt="Woman using mask image">
+            <img src="images/Woman_mask.png" alt="Woman using mask image" width="400px">
         </div>
         <div>
-            <h2>Preparations Before Vaccine</h2>
+            <h2 style="font-weight:bolder">Preparations Before Vaccine</h2>
             <p>The success of the vaccines is strongly influenced by the strenght of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
-            <img src="" alt="Prevention icon"><p>Avoid alcoholic beverages</p><p>Jakarta Utara</p> 
-            <img src="" alt="Prevention icon"><p>Avoid stress</p><p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
-            <img src="" alt="Statistics icon"><p>Eat healthy food</p><p>Jakarta Utara</p>
-            <img src="" alt="Ckeck mark icon"><p>Get enough sleep</p><p>Jakarta Utara</p>
-            <img src="" alt="Heart icon"><p>Exercise or physical activity</p><p>Jakarta Utara</p>
+            <img src="images/icon_prevent.png" alt="Prevention icon" width="30px"><p>Avoid alcoholic beverages</p><p>Jakarta Utara</p> 
+            <img src="images/icon_prevent.png" alt="Prevention icon" width="30px"><p>Avoid stress</p><p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+            <img src="images/icon_food.png" alt="Food icon" width="30px"><p>Eat healthy food</p><p>Jakarta Utara</p>
+            <img src="images/icon_sleep.png" alt="Sleep icon" width="30px"><p>Get enough sleep</p><p>Jakarta Utara</p>
+            <img src="images/icon_heart.png" alt="Heart icon" width="30px"><p>Exercise or physical activity</p><p>Jakarta Utara</p>
         </div>
     </section>
-    <section>
-        <div>
-            <h2>Emergency Contact</h2>
+    <section class="col-6 responsive">
+        <div class="container">
+            <h2 style="font-weight:bolder">Emergency Contact</h2>
             <p>Contact ine of the contacts below if you or your family feel unwell and have similar symptoms such as Covid-19, make sure you also take care of yourself before reporting to us:</p>
             <div>
-                <img src="" alt="Telephone icon"><p>Call</p><p>021.123.145.14</p>
+                <img src="images/icon_call.png" alt="Telephone icon" width="30px"><p>Call</p><p>021.123.145.14</p>
                 <button><a href="#">Call Now</a></button>
-                <img src="" alt="Chat icon"><p>Chat</p><p>021.123.145.14</p>
+                <img src="images/icon_chat.png" alt="Chat icon" width="30px"><p>Chat</p><p>021.123.145.14</p>
                 <button><a href="#">Chat Now</a></button>
-                <img src="" alt="Camera icon"><p>Video Call</p><p>021.123.145.14</p>
+                <img src="images/icon_video call.png" alt="Camera icon" width="30px"><p>Video Call</p><p>021.123.145.14</p>
                 <button><a href="#">Video Call Now</a></button>
-                <img src="" alt="Envelope icon"><p>Message</p><p>021.123.145.14</p>
+                <img src="images/icon_message.png" alt="Envelope icon" width="30px"><p>Message</p><p>021.123.145.14</p>
                 <button><a href="#">Message Now</a></button>
             </div>
         </div>
         <div>
-            <img src="" alt="Nurse on phone image">
+            <img src="images/Nurse_cellphone.png" alt="Nurse on phone image" width="400px">
+        </div>
+    </section> -->
+  
+    <section id="preparations">
+        <div class="faq">
+            <div class="container text-right">
+                <div class="faq-text">
+                    <h1>Preparations Before Vaccine</h1>
+                    <p>
+                        The success of vaccines is strongly influenced by the strength of the body's immune system.
+                        Therefore, there are several things that can be tried to make the COVID-19 vaccine work:
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="faq-image">
+                    <img src="images/Woman_mask.png" alt="muchahca_cubrebocas" class="">
+                </div>
+                <div class="faq-main-info align-items-center">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Avoid alcoholic beverages
+                                </button>
+                            </h2>
+                          </div>
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia illum itaque, placeat
+                                    accusamus labore voluptate neque, totam voluptas qui, impedit numquam expedita esse doloremque
+                                    quod. Officiis omnis reiciendis sunt!
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Avoid stress
+                                </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia illum itaque, placeat
+                                    accusamus labore voluptate neque, totam voluptas qui, impedit numquam expedita esse doloremque
+                                    quod. Officiis omnis reiciendis sunt!
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Eat healthy food
+                                </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia illum itaque, placeat
+                                    accusamus labore voluptate neque, totam voluptas qui, impedit numquam expedita esse doloremque
+                                    quod. Officiis omnis reiciendis sunt!
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                              <h2 class="mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Get enough sleep
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia illum itaque, placeat
+                                    accusamus labore voluptate neque, totam voluptas qui, impedit numquam expedita esse doloremque
+                                    quod. Officiis omnis reiciendis sunt!
+                                </p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                              <h2 class="mb-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="blue" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Exercise or physical activity
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                              <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores officia illum itaque, placeat
+                                    accusamus labore voluptate neque, totam voluptas qui, impedit numquam expedita esse doloremque
+                                    quod. Officiis omnis reiciendis sunt!
+                                </p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
-    <footer>
-        <div>
-            <p>Vaccination</p>
-            <p>Our goal is to help the world free from the ongoing pandemic</p>
-        </div>
-        <div>
-            <a href="#">About</a>
-            <a href="#">About Us</a>
-            <a href="#">Features</a>
-            <a href="#">News & Blog</a>
 
-            <a href="#">Company</a>
-            <a href="#">How We Work?</a>
-            <a href="#">Capital</a>
-            <a href="#">Security</a>
+    <section id="emergency">
+        <div class="contacts">
+            <div class="container">
+                <div class="main-info">
+                    <h1>Emergency Contact</h1>
+                    <p>
+                        Contact on of the contacts below if you or your family feel
+                        unwell and have similar symptoms such as Covid-19, make sure you
+                        also take care of yourself before reporting to us:
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact-info">
+                    <div class="card align-self-end">
+                        <div class="card-body">
+                            <div class="card-main-body">
+                                <i class="contact-icon bi bi-telephone-fill"></i>
+                                <div class="body-title-text">
+                                    <h3 class="card-title">Call</h3>
+                                    <p class="card-text">123-456-789</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="card align-self-end">
+                        <div class="card-body">
+                            <div class="card-main-body">
+                                <i class="contact-icon bi bi-chat-dots-fill"></i>
+                                <div class="body-title-text">
+                                    <h3 class="card-title">Chat</h3>
+                                    <p class="card-text">123-456-789</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg">Chat Now</a>
+                        </div>
+                    </div>
+                    <div class="card align-self-start">
+                        <div class="card-body">
+                            <div class="card-main-body">
+                                <i class="contact-icon bi bi-camera-video-fill"></i>
+                                <div class="body-title-text">
+                                    <h3 class="card-title">Video Call</h3>
+                                    <p class="card-text">123-456-789</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg">Video Call Now</a>
+                        </div>
+                    </div>
+                    <div class="card align-self-start">
+                        <div class="card-body">
+                            <div class="card-main-body">
+                                <i class="contact-icon bi bi-envelope-fill"></i>
+                                <div class="body-title-text">
+                                    <h3 class="card-title">Message</h3>
+                                    <p class="card-text">123-456-789</p>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-lg">Message Now</a>
+                        </div>
+                    </div>
 
-            <a href="#">Support</a>
-            <a href="#">FAQs</a>
-            <a href="#">Support Center</a>
-            <a href="#">Contact Us</a>
+                </div>
+                <div class="emergency-image">
+                    <img src="images/Nurse_cellphone.png" alt="enfermero" class="">
+                </div>
+            </div>
         </div>
-        <a href="#">Terms and agreements</a>
-        <a href="#">Privacy Policy</a>
-    </footer>  
+    </section>
+            
+    <div class="footer">
+        <div class="footer-content container">
+            <div class="col-3 footer-section">
+                <p>Vaccination</p>
+                <p>Our goal is to help the world free from the ongoing pandemic</p> 
+            </div>
+            <div class="col-3 footer-custom links">
+                <p style="font-family: 'Open Sans'; font-size: 16px; font-weight: bold;">
+                About
+                </p>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="Pedidos.html">Features</a></li>
+                <li><a href="index.html">News & Blog</a></li>
+            </div>
+            <div class="col-3 footer-custom links">
+                <p style="font-family: 'Open Sans'; font-size: 16px; font-weight: bold;">
+                    Company
+                </p>
+                <li><a href="index.html">How We Work?</a></li>
+                <li><a href="index.html">Capital</a></li>
+                <li><a href="index.html">Security</a></li>
+            </div>
+            <div class="col-3 footer-custom links">
+                <p style="font-family: 'Open Sans'; font-size: 16px; font-weight: bold;">
+                    Support
+                </p>
+                <li><a href="index.html">FAQs</a></li>
+                <li><a href="index.html">Support Center</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </div>
+            <div class="footer-bottom container">
+                <p>
+                &copy;2021 Vaccination. All rights reserved
+                </p> 
+                <p>
+                    Terms & Agreements&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy
+                </p> 
+            </div>
+        </div>
+    </div>
+      
 </body>
 </html>

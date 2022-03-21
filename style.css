@@ -1,0 +1,295 @@
+h1{
+    font-family: poppins;
+    color:#333366;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+h2{
+    font-family: poppins;
+    color: #333366;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+p{
+    font-family: poppins;
+    color: #666699;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* button{
+    background-color: 3366cc;
+    border-radius: 10px;
+    padding: 10px;
+   box-sizing: content-box;
+} */
+.btn {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 10px;
+    background: var(--dark-purple);
+}
+
+.btn:hover {
+    background: var(--very-dark-purple);
+}
+
+section{
+    padding: 2em 2em;
+}
+
+.container{
+    max-width: 1800px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    place-content: space-between;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.mr-auto{
+    margin-right: auto !important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+  
+.nav-bar {
+    padding: 1em;
+}
+
+.social-media{
+    display: inline-block;
+    box-sizing: border-box;
+} 
+
+.icon {
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.menu-nav ul{
+    padding: 0;
+}
+
+.menu-nav li{
+    display: inline;
+}
+
+.menu-nav li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+    color:rgb(58, 56, 56);
+}
+
+.hero{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img_container{
+    position: relative;
+    width: 100%;
+}
+
+.img_container img{
+    width: 100%;
+    height: auto;
+}
+
+.img_container .on-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about-info{
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.influencers{
+    display: inline-block;
+}
+
+.influencers img{
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption{
+    background-color: rgb(255, 255, 255);
+    border: thin silver solid;
+    text-align: justify;
+    width: 100%;
+    padding: 8px;
+}
+
+span{
+    color: #faeec0;
+    font-weight: bold;
+}
+
+mark{
+    background-color: black;
+    color:aqua;
+}
+
+.footer{
+    background: #d5fafa;
+    color: #d3d3d3;
+    height: 300px;
+    position: relative;
+    padding-top: 20px;
+    
+}
+
+.footer .footer-bottom{
+    background:#d5fafa;
+    color:#383838;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.newsletter{
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.newsletter-message input{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    opacity: 25%;
+    border: thin rgb(255, 255, 255) solid;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.newsletter-name-address input{
+    width: 49%;
+    height: 20%;
+    background-color: rgb(0, 0, 0);
+    opacity: 25%;
+    border: thin silver solid;
+}
+
+.footer{
+    opacity: 100%;
+}
+
+.footer-custom a{
+    color: white;
+}
+
+.rectangle li{
+    list-style: none;
+}
+
+.rectangle a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+.rectangle a:before{
+    content: ">";
+    color: white;
+    position: absolute;
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #0c0c0c;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.responsive{
+    max-width: 100%;
+    height:auto;
+}
+
+.espacio{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.schedule-box{
+    position: absolute;
+    background-color: ffffff;
+    fill-opacity: 50%;
+    
+}
